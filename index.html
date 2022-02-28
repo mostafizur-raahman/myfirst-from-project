@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online payment</title>
+</head>
+<body>
+    <div class="content">
+    <form action="">
+        <header>
+            <h1 id="main_head">Make payment</h1>
+        </header>
+        <hr>
+        <h2>User Information</h2>
+        <p>First Name: <input type="text" placeholder="Enter your first name" autofocus required></p>
+        <p>Last Name: <input type="text" placeholder="Enter your last name" required></p>
+        <fieldset >
+            <legend>Gender</legend>
+            <p>Male <input type="radio" name="gen" id="gen" required> Female <input type="radio" name="gen" id="gen" required> others <input type="radio" name="gen" id="gen" required></p>    
+        </fieldset>
+        <p>Address:</p>
+        <textarea name="address" id="" cols="50" rows="10" placeholder="Enter Your address" required></textarea>
+        <p>E-mail: <input type="email" name="email" id="email" placeholder="no-reply@gmail.com" required></p>
+        <p>Postal code : <input type="number" placeholder="1234" required></p>
+        <h2>Payment information</h2>
+        <h6>Allowed card:</h6>
+        <img src="pay.png" alt="paymant_pic">
+        <p>
+            Card type 
+            <select name="card_type" id="card_type" required>
+                <option value="">| select your card |</option>
+                <option value="bkash">Bkash</option>
+                <option value="nagad">Nagad</option>
+                <option value="rocket">Rocket</option>
+                <option value="upay">Upay</option>
+                <option value="visa">Visa</option>
+                <option value="Mastercard">MasterCard</option>
+                <option value="citybank">CityBank</option>
+                <option value="americanexpress">AmericanExpress</option>
+            </select>
+        </p>
+        <p>Card number: <input type="number" required placeholder="Enter your card number"></p>
+        <p>Password: <input type="password" required placeholder="password"></p>
+        <p>OTP: <input type="text" required ></p>
+        <p>Subscription duration: <input type="date"></p>
+        <p>Amount: <input type="number" name="amount" id="amount" required placeholder="taka"></p>
+        <p>Feedback: <input type="text" placeholder="one word"></p>
+        <input type="submit" value="Proceed" >
+        
+        
+    </form>
+
+    </div>
+</body>
+</html>
